@@ -11,7 +11,12 @@
 	Hint:  Suggested fonts --> Ubuntu, adobe-garamond-pro 
 */
 body {
-
+	border: 100px solid rgba(51, 0, 111, 0.6);
+	color: #505050;
+	max-width: 800px;
+	width: 80%;
+	padding: 20px;
+	margin: 30px auto;
 }
 
 
@@ -20,7 +25,7 @@ body {
     Set all paragraph font size to 1.2em of the root container
 */
 p {
-
+	font-size: 1.2em;
 }
 
 
@@ -35,8 +40,10 @@ p {
 	Hint:  Use special type of background-image --> linear-gradient 
 */
 hr {
-    border: 0;
-  
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+
 }
 
 
@@ -48,10 +55,10 @@ hr {
 		- smaller font size of 0.8em 
 */
 .citation {
-
+	letter-spacing: 0.1em;
+	font-style: oblique;
+	font-size: 0.8em;
 }
-
-
 
 /* TASK E:  Style footnotes
 	Make all footnotes:
@@ -61,7 +68,9 @@ hr {
 	Hint:  Use vertical-align: super 
 */
 .footnote {
-
+	vertical-align: super;
+	font-size: 0.6em;
+	color: blue;
 }
 
 
@@ -72,7 +81,7 @@ hr {
 	Hint:  text-align applies not only to text but all objects in the box
 */
 .headpic {
-
+	text-align: center;
 }
 
 
@@ -81,7 +90,7 @@ hr {
     Make the head picture image 90% of the container width 
 */
 .headpic img {
-
+	width: 90%;
 }
 
 
@@ -92,7 +101,8 @@ hr {
 		- text size reduced to 0.8em 
 */
 .headpic figcaption {
-
+	letter-spacing: 0.15em;
+	font-size: 0.8em;
 }
 
 
@@ -104,7 +114,8 @@ hr {
 		- offset the paragraph from the left by 8 pixels using padding-left 
 */
 p.intro {
-
+	border-left: 8px solid rgba(51, 0, 111, 0.6);
+	padding-left: 8px;
 }
 
 
@@ -116,7 +127,9 @@ p.intro {
 		- remove all extraneous margin using margin: 0 auto
 */
 h1 {
-
+	text-align: center;
+	font-size: 2.5em;
+	margin: 0 auto;
 }
 
 
@@ -126,8 +139,10 @@ h1 {
 		- use text-transform to capitalize them
 		- make them the same color as the lavender theme color 10% darker (i.e. alpha= 0.6 + 0.1)
 */
-h1, h2 {
-
+h1,
+h2 {
+	text-transform: capitalize;
+	color: rgba(51, 0, 111, 0.7);
 }
 
 
@@ -139,7 +154,9 @@ h1, h2 {
 		- bold 
 */
 #para1::first-letter {
-
+	font-size: 2em;
+	color: rgba(51, 0, 111, 0.7);
+	font-weight: bold;
 }
 
 
@@ -156,7 +173,10 @@ h1, h2 {
 	centering
 */
 table.swatches {
-
+	border: 2px solid lightgray;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Calibri, sans-serif;
 }
 
 
@@ -168,7 +188,9 @@ table.swatches {
 		- have a lightgray border of 2px around all swatch cells **except** for the color swatches 
 */
 table.swatches td {
-
+	width: 160px;
+	text-align: center;
+	border: 2px solid lightgray;
 }
 
 
@@ -182,7 +204,9 @@ table.swatches td {
 	Hint: use text-transform and letter-spacing 
 */
 tr:first-child {
-
+	height: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
 }
 
 
@@ -196,19 +220,23 @@ tr:first-child {
 	* Set the text color to lightgray, **except** for the first cell, which should be black 
 */
 #lav1 {
-
+	background-color: #e6e6fa;
+	color: black;
 }
 
 #lav2 {
-
+	background-color: #b57edc;
+	color: lightgray;
 }
 
 #lav3 {
-
+	background-color: #9966cc;
+	color: lightgray;
 }
 
 #lav4 {
-
+	background-color: #4b2e83;
+	color: lightgray;
 }
 
 
@@ -221,8 +249,8 @@ tr:first-child {
 	Hint: temporarily turn on a border to see where the photos container is
 */
 .photos {
-    text-align: center;
-    /* border: 1px solid black; */
+	text-align: center;
+	/* border: 1px solid black; */
 }
 
 
@@ -233,7 +261,8 @@ tr:first-child {
 	Hint: one HTML table cell has been designed to enclose the whole grid, but use width of 30% and margin of 1.3% for the images to "float" them into a 3 picture wide grid 
 */
 .photos img {
-
+	width: 30%;
+	margin: 1.3%;
 }
 
 
@@ -242,5 +271,5 @@ tr:first-child {
     Wrap a thin lightgray border around the photo gallery 
 */
 table#photos {
-
+	border: 1px solid lightgray;
 }
